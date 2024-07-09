@@ -4,13 +4,13 @@ import dictionary from "../../assets/dictionary.jpg";
 
 const CryptoDictionary = () => {
   return (
-    <div className="main">
-      <div className="flex flex-col gap-2 items-center justify-center">
-        <div className="font-semibold text-2xl">Crypto Dictionary</div>
-        <div>Your one-stop to catch up on all crypto terms</div>
+    <div className="bg-[#080808]">
+      <div className="flex flex-col items-center justify-center p-8">
+        <p className="font-semibold text-2xl">Crypto Dictionary</p>
+        <p>Your one-stop to catch up on all crypto terms</p>
       </div>
 
-      <div className="flex items-center justify-center m-4">
+      <div className="flex items-center justify-center">
         <div
           key=""
           className="relative w-[75%] h-[26rem] overflow-hidden rounded-lg m-4 transform transition duration-300 group"

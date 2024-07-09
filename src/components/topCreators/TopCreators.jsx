@@ -5,15 +5,15 @@ import reelSvg from "../../assets/reel.svg";
 
 const TopCreators = () => {
   return (
-    <div className="main">
-      <div className="flex flex-col gap-2 items-center justify-center">
+    <div className="bg-[#080808]">
+      <div className="flex flex-col gap-2 items-center justify-center p-8">
         <div className="font-semibold text-2xl">
           Top Crypto Creators and Projects to Follow
         </div>
         <div>Answers to your crypto doubts, straight from the experts</div>
       </div>
 
-      <div className="flex items-center justify-center m-4">
+      <div className="flex items-center justify-center">
         {topCryptoCreators.map((creator) => (
           <div
             key={creator.id}
