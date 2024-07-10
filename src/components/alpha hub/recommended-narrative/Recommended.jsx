@@ -1,34 +1,41 @@
 import React from "react";
+import coin from "../../../assets/coin.svg";
+import recomendedNarratives from "./data";
 
 const Recommended = () => {
   return (
-    <div className="flex items-center justify-center w-full">
-      <div className="flex items-center justify-center w-[85%] backdrop-blur-sm bg-white/10 bg-opacity-50 p-1 rounded-lg">
-        <div className="flex items-center justify-center w-[55%] p-2">
-          <div className="relative w-full h-[22rem] overflow-hidden rounded-lg transform transition duration-300">
-            <img
-              src=""
-              alt="img"
-              className="object-center w-full h-full rounded-lg"
-            />
-            <div className="absolute bottom-12 left-12 right-0 text-white">
-              <p className="text-4xl font-semibold">hello</p>
-              <p className="text-xl">imageContentDescription</p>
+    <div className="main-div w-full flex items-center justify-center gap-4 bg-[#080808]">
+      <div className="w-[85%] flex flex-wrap items-center justify-center gap-3 sm:inline-block">
+        <div className="flex items-center justify-center my-4 w-[85%]">
+          <div className="text-2xl">Recommended Narratives</div>
+        </div>
+        {recomendedNarratives.map((narratives) => {
+          return (
+            <div
+              className="flex items-center justify-center p-3 w-[45%] bg-[#151515] rounded-xl sm:flex-wrap sm:w-full sm:my-4"
+              key={narratives.id}
+            >
+              <div className="p-2 h-40 w-40 bg-white/10 border rounded-xl">
+                <img
+                  src={narratives.imgSrc}
+                  alt="image"
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="px-4">
+                <div className="text-2xl py-px sm:py-2">
+                  {narratives.heading}
+                </div>
+                <div className="text-gray-500">{narratives.description}</div>
+                <div className="border-1 border-dashed text-gray-100 my-3"></div>
+                <div className="flex items-center justify-center gap-2 w-24 p-2 bg-white/20 rounded-full text-gray-300 text-sm">
+                  <img src={coin} alt="coin" className="w-4 h-4" />
+                  <div>{narratives.xp} XPs</div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div className="p-2 w-[45%]">
-          <div className="p-2">
-            <p className="text-3xl font-semibold">contentHeading</p>
-            <p className="text-gray-200">contentDescription</p>
-
-            <div className="w-full border m-2"></div>
-            <button className="p-3 my-4 bg-[#6435E9] rounded-lg text-white">
-              Begin Your Journey
-            </button>
-          </div>
-        </div>
+          );
+        })}
       </div>
     </div>
   );
