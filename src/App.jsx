@@ -10,6 +10,7 @@ import Recommended from "./components/alpha hub/recommended-narrative/Recommende
 import ToggleButton from "./components/ToggleButton";
 import Section1 from "./components/essentials/Section1";
 import Section2 from "./components/essentials/Section2";
+import Section3 from "./components/essentials/Section3";
 
 function App() {
   const [activeFilter, setActiveFilter] = useState("Essentials");
@@ -29,7 +30,8 @@ function App() {
       ) : (
         <>
           <Section1 />
-          {/* <Section2 /> */}
+          <Section2 />
+          <Section3 />
         </>
       )}
       <TopCreators />

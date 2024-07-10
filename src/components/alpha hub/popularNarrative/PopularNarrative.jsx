@@ -14,10 +14,10 @@ const PopularNarrative = () => {
       </div>
       {PopularNarrativeMainData.map((popularData) => (
         <div
-          className="flex items-center justify-center text-white bg-[#141414] w-[85%] rounded-lg my-2"
+          className="flex items-center justify-center text-white bg-[#141414] w-[85%] rounded-lg my-2 sm:flex-col"
           key={popularData.id}
         >
-          <div className="w-[25%] p-3">
+          <div className="w-[25%] sm:w-full p-3">
             <p className="text-3xl">{popularData.heading}</p>
             <p className="text-gray-500">{popularData.content}</p>
             <div className="flex items-center">
@@ -69,7 +69,7 @@ const PopularNarrative = () => {
 
           {/* Crowsel  */}
 
-          <div className="w-[70%]">
+          <div className="w-[70%] sm:w-full">
             <PopularCrowsel categories={popularData.categories} />
           </div>
         </div>

@@ -29,18 +29,19 @@ const HeroCarousel = () => {
         type="button"
         data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="prev"
+        className="sm:hidden"
       >
         <span
-          className="carousel-control-prev-icon absolute top-40 left-28  py-8 bg-white/10 backdrop-blur-lg rounded-sm"
+          className="carousel-control-prev-icon absolute top-40 left-28  py-8 bg-white/10 backdrop-blur-lg rounded-sm "
           aria-hidden="true"
         ></span>
         <span className="visually-hidden">Previous</span>
       </button>
       <button
-        className=""
         type="button"
         data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="next"
+        className="sm:hidden"
       >
         <span
           className="carousel-control-next-icon absolute top-40 right-28 py-8 backdrop-blur-sm bg-white/10 rounded-sm"

@@ -6,10 +6,10 @@ import task from "../../../assets/task.svg";
 
 const PopularCrowsel = ({ categories }) => {
   return (
-    <div className="flex w-full gap-2 p-2 ml-4">
+    <div className="flex w-full gap-2 p-2 ml-4 sm:ml-0 sm:overflow-scroll">
       {categories.map((cat) => (
         <div
-          className="p-3 rounded-md max-w-[37%] bg-white/10 backdrop-blur-lg"
+          className="p-3 rounded-md max-w-[37%] sm:max-w-full bg-white/10 backdrop-blur-lg"
           key={cat.id}
         >
           <img src={crw1} alt="" className="h-44 w-full rounded-md" />

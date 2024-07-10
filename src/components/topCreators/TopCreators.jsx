@@ -13,11 +13,11 @@ const TopCreators = () => {
         <div>Answers to your crypto doubts, straight from the experts</div>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center flex-wrap">
         {topCryptoCreators.map((creator) => (
           <div
             key={creator.id}
-            className="relative w-64 h-96 overflow-hidden rounded-lg m-4 transform transition duration-300 group"
+            className="relative w-64 h-96 overflow-hidden rounded-lg m-3 transform transition duration-300 group"
           >
             <img
               src={creator.imageSrc}
@@ -29,7 +29,7 @@ const TopCreators = () => {
                 {creator.content}
               </p>
             </div>
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-700 group-hover:opacity-100">
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-700 hover:opacity-1">
               <div className="rounded-full flex items-center justify-center w-16 h-16 bg-white/30">
                 <img src={playSvg} alt="Play" className="w-12 h-12" />
               </div>
